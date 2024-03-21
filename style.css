@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: #F9F9F9;
+    
+}
+
+nav{
+    width: 100%;
+    padding: 18px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a{
+    color:black;
+    font-size: 17px;
+    font-weight: 400;
+    transition: 0.2s;
+}
+
+nav ul li a:hover{
+    color:rgb(13, 174, 13);
+}
+
+.logo h1{
+    font-size: 30px;
+    color: rgb(6, 143, 6);
+    cursor: pointer;
+}
+
+.searchBox input{
+    outline: none;
+    padding: 4px 3px;
+    border-radius: 4px;
+}
+
+.searchBox button {
+    padding: 6px 9px;
+    background: rgb(30, 173, 30);
+    outline: none;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* #container{
+    display: flex;
+    align-items: center;
+    gap:20px;
+} */
+
+#container{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px 10%;
+       
+}
+.cards{
+    flex-basis: 22%;
+    overflow: hidden;
+    height: 400px;
+    min-height: 350px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+}
+.cards:hover{
+    transform: translateY(-2px);
+}
+.image img{
+    width: 100%;
+    overflow: hidden;
+    height:160px;
+}
+.content h1{
+    font-size: 20px;
+    margin: 5px 4px;
+    color:rgb(19, 17, 17);
+}
+.content h5{
+    margin: 8px 4px;
+    font-size: 12px;
+    color: rgb(51, 49, 49);
+    font-weight: 300;
+}
+.content p{
+    margin: 10px 4px;
+}
+
+
+/* CSS for screens up to 768px width */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 15px 5%;
+    }
+
+    nav ul li {
+        margin-left: 15px;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .searchBox input {
+        padding: 3px 2px;
+    }
+
+    .searchBox button {
+        padding: 5px 7px;
+    }
+
+    #container .cards {
+        flex-basis: 45%;
+        height: auto;
+        min-height: auto;
+    }
+
+    .image img {
+        height: 120px;
+    }
+
+    .content h1 {
+        font-size: 18px;
+    }
+}
+
+/* CSS for screens up to 480px width */
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        padding: 8px 0;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+        margin-block: 8px;
+    }
+
+    .logo h1 {
+        font-size: 25px;
+        margin: 8px 0;
+    }
+
+    .searchBox input {
+        padding: 2px 1px;
+        margin: 8px 0;
+    }
+
+    .searchBox button {
+        padding: 4px 6px;
+    }
+
+    #container .cards {
+        flex-basis: 100%;
+    
+    }
+
+    .image img {
+        height:100%;
+    }
+
+    .content h1 {
+        font-size: 16px;
+    }
+    .content p{
+        font-size: 15px;
+        margin: 10px 5px;
+    }
+
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo" onclick="reload()">
+            <h1>MyNews</h1>
+        </div>
+        <ul>
+            <li><a href="#"  id="cricket" onclick="navClick('cricket')">Cricket</a></li>
+            <li><a href="#"  id="crime" onclick="navClick('crime')">Crime</a></li>
+            <li><a href="#"  id="technology" onclick="navClick('technology')">Technology</a></li>
+            <li><a href="#"  id="pollution" onclick="navClick('pollution')">Pollution</a></li>
+        </ul>
+        <div class="searchBox">
+            <input type="text" placeholder="Search news" id="inputBox">
+            <button type="button" id="btn">Search</button>
+        </div>
+    </nav>
+    
+    <div id="container"></div>
+    <script src="news.js"></script>
+</body>
+</html> 
